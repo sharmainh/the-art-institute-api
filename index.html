@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<link rel="stylesheet" href="static/main.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="main.js" defer></script>
+<script src="https://kit.fontawesome.com/e3b4645c83.js" crossorigin="anonymous"></script>
+<title>Art Institute</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Navbar Start -->
+  <nav class="nav pt-3 d-flex flex-row bd-highlight mb-3 container text-light">
+    <div class="col-lg-6">
+      <div class="d-flex flex-row bd-highlight container text-light">
+        <div class=" col-3 bd-highlight"> 
+          <a class="nav-link active" href="#">Home 
+          <span class="sr-only">(current)</span>
+          </a>
+        </div>
+        <div class="col-3 bd-highlight">
+          <a class="nav-link" href="#">Collections</a>
+        </div>
+        <div class="col-3 bd-highlight justify-content-center">  
+          <a class="nav-link" href="#">Events</a>
+        </div>
+        <div class="col-3 bd-highlight justify-content-center">  
+          <a class="nav-link" href="#">About Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="d-flex flex-row bd-highlight container text-light justify-content-end">
+        <div class="col-3 bd-highlight">
+          <a class="nav-link" href="#">Log In</a>
+        </div>
+        <div class="col-3 bd-highlight justify-content-center">
+          <button class="rounded-pill nav-item"
+          style="background-color: red; color: white; border: none; 
+          padding: 10px; width: 130px">Contact Us</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- <nav class=" navbar-expand-lg d-flex  bd-highlight mx-5 px-5 container">
+ 
+</nav> -->
+<!-- Navbar End -->
+
+<!-- Introduction Start  -->
+  <section class="mt-2 rounded container ";>
+    <div class="row pt-4 justify-content-center mx-5">
+      <div class="col-10 intro-head">
+        Dive Into <span style="color: red;">Creativity</span> With Our 
+        <span class="" style="margin-left: 175px;">Gallery Collection</span> 
+      </div>
+    </div>
+    <div class="row px-5" style="padding-top: 300px;">
+      <div class="col-7 text-white " style="font-weight: 200;">
+        <p>
+          Dive into creativity with our captivating gallery collection! Immerse
+          yourself in a world of artistic wonders, where every stroke of the brush
+          and every captured moment tells a unique story. From the exquisite 
+          pottery of the Chicago Art Institute to ancient cups steeped in history, 
+          our curated collection celebrates a rich tapestry of human expression 
+          and creativity, focusing solely on the intricate artistry of pottery.
+        </p>
+      </div>
+      <div class="d-flex justify-content-center ">
+        <a href="#viewgallery">
+          <button class="rounded-pill nav-item buttn-view  
+          "style="color: white; 
+          padding: 10px; width: 130px " >View Gallery
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
+<!-- Introduction End  -->
+
+<!-- Our Gallery Start -->
+  <section class="container" style="background-image: none;">
+    <div class="row align-items-center ">
+        <div class="d-flex pt-5 justify-content-center text-white my-5 " style="font-size: 60px; font-weight: bold;">
+          Our  <span class="px-3" style="color: red;" id="viewgallery"> Gallery </span>
+        </div>
+    </div>
+<!-- Carousel Start -->
+    <div class="flex-row  gallery container " style="padding-left: 270px; ">
+      <div class="col-7 d-flex justify-content-center mx-5">
+        <div class="swiper mySwiper pagination-dynamic-bullets=true">
+          <div class="swiper-wrapper">
+<!-- image 1 -->
+            <div class="swiper-slide slide_1" >
+              <img  id="myImg" src="../../static/images/items/jar2.jpeg" alt="" >
+<!-- The Modal -->
+              <div id="myModal" class="modal">
+  <!-- The Close Button -->
+                <span id="close">&times;</span>
+  <!-- Modal Content-->
+                <p style="color: white;" class="list-group ranger-list "></p>
+              </div>
+            </div>
+<!-- Image 2 -->
+            <div class="swiper-slide slide_2  "  >
+              <img id="myImg2" src="../../static/images/items/pyxis.jpeg" alt="" >
+              <div id="myModal2" class="modal">
+                <span id="close2"  >&times;</span>
+                <!-- Modal Content-->
+                <p style="color: white;" class="list-group ranger-list-2 "></p>
+              </div>
+            </div>
+<!-- Image 3 -->
+            <div class="swiper-slide slide_3" >
+              <img id="myImg3" src="../../static/images/items/willemDeKooning.jpeg" alt="">
+              <div id="myModal3" class="modal">
+                <span id="close3"  >&times;</span>
+                <!-- Modal Content-->
+                <p style="color: white;" class="list-group ranger-list-3 "></p>
+              </div>
+            </div>
+<!-- Image 4 -->
+            <div class="swiper-slide slide_4">
+              <img id="myImg4" src="../../static/images/items/vase2.jpeg" alt="">
+              <div id="myModal4" class="modal">
+                <span id="close4"  >&times;</span>
+                <!-- Modal Content-->
+                <p style="color: white;" class="list-group ranger-list-4 "></p>
+              </div>
+            </div>     
+<!-- Image 5 -->
+          <div class="swiper-slide slide_5">
+            <img id="myImg5" src="../../static/images/items/maggiesBrain.jpeg" alt="">
+            <div id="myModal5" class="modal">
+              <span id="close5"  >&times;</span>
+              <p style="color: white;" class="list-group ranger-list-5 "></p>
+            </div>
+          </div>
+<!-- Image 6 -->
+          <div class="swiper-slide slide_6">
+            <img id="myImg6" src="../../static/images/items/jar1.jpeg" alt="" onclick="">
+            <div id="myModal6" class="modal">
+              <span id="close6"  >&times;</span>
+              <div style="color: white;" class="list-group ranger-list-6 "></div>
+            </div>
+          </div>
+        </div>
+          <div class="swiper-pagination "></div>
+          <div class="swiper-button-next" style="background-color: rgba(68, 67, 70, 0.828); border-radius: 100%; padding: 30px; color: white; border-color: rgba(240, 255, 255, 0.693);"></div>
+          <div class="swiper-button-prev" style="background-color: rgba(68, 67, 70, 0.828); border-radius: 100%; padding: 30px; color: white; border-color: rgba(240, 255, 255, 0.693);"></div>
+        </div>
+      </div>
+    </div>  
+<!-- Carousel End -->
+  </section>
+
+<!-- Footer -->
+<div class="d-flex text-light mt-5 pt-5 pb-5 justify-content-around flex-row footer container" style="margin-top: 125px;">
+  <div class="p-2 col-3 mx-5">
+     <h2>Dive Into Creativity</h2>
+      
+          <p class="col-12 pt-3">Thank you for joining us on this inspiring jouurney.
+            We invite you to explore our gallery, engage with our community, and discover the beauty that lies within each stroke of the brush and every 
+            captured moment.
+          </p>
+      
+  </div>
+  <div class="p-2 mt-2 ">
+      <h5 class="pb-2" style="font-weight: 900;">Quick Links</h5>
+      <p class="p-foot">Home</p>
+      <p class="p-foot">Collections</p>
+      <p class="p-foot">Events</p>
+      <p class="p-foot">About Us</p>
+  </div>
+  <div class="p-2 mt-2">
+      <h5 class="pb-2" style="font-weight: 900;">Address</h5>
+      <p class="p-foot">3998, Ranchview Dr. <br> Richardson, California 62639</p>
+      
+  </div>
+  <div class="p-2 mt-2 ">
+      <h5 class="pb-2" style="font-weight: 900;">Social Links</h5>
+      <div class="d-flex flex-row bd-highlight mb-3">
+        <div class="p-2 bd-highlight">
+          <i class="fa-brands fa-google fa-bounce fa-xl"></i></div>
+        <div class="p-2 bd-highlight">
+          <i class="fa-brands fa-facebook fa-bounce fa-xl"></i>
+        </div>
+        <div class="p-2 bd-highlight">
+          <i class="fa-brands fa-square-youtube fa-bounce fa-xl"></i></div>
+        <div class="p-2 bd-highlight">
+          <i class="fa-brands fa-whatsapp fa-bounce fa-xl"></i>
+        </div>
+      </div>
+  </div>  
+</div>
+<!-- Footer End -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
